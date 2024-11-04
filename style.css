@@ -1,5 +1,5 @@
 :root{
-
+    --text-mult: 1.2;
 }
 
 /*Navigation*/
@@ -108,9 +108,6 @@ section {
 	min-height: 50vh;
 	text-align: justify;
 }
-.h1container{
-    margin: 0 20px;
-}
 .header-image {
 	width: 50%;
 	height: auto;
@@ -139,6 +136,17 @@ header{
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
     
+}
+.h1container{
+    margin: 20px auto;
+    padding: 0 40px;
+    max-width: 1200;
+}
+h1{
+    font-size: calc(32px * var(--text-mult));
+}
+body{
+    font-size: calc(16px * var(--text-mult));
 }
 footer{
 	clear: both;
