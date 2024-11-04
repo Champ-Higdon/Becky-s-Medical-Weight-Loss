@@ -128,7 +128,10 @@ header{
     background-size: cover; /* This makes the image cover the entire element */
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
-      
+    
+}
+footer{
+	clear: both;
 }
 /*About*/
 .about-container {
