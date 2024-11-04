@@ -130,17 +130,25 @@ header{
     background-repeat: no-repeat; /* This prevents the image from repeating */
       
 }
-/*TODO:check for repeats*/
+/*About*/
 .about-container {
     display: flex;
     align-items: center;
-  }
+}
   
-  .about-image {
+.about-image {
     width: 200px;
     margin-right: 20px;
-  }
+}
   
-  .about-text {
+.about-text {
     flex: 1;
-  }
+}
+/*Contact*/
+.contact-container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    min-height: 50vh;
+    text-align: justify;
+}
