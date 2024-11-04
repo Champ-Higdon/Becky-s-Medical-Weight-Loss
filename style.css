@@ -130,3 +130,17 @@ header{
     background-repeat: no-repeat; /* This prevents the image from repeating */
       
 }
+/*TODO:check for repeats*/
+.about-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
