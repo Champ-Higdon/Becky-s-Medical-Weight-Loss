@@ -112,7 +112,7 @@ section {
 	min-height: 50vh;
 	text-align: justify;
 }
-.header-image {
+.header-image-index {
 	width: 50%;
 	height: auto;
 	padding: 0; /* Ensure the image itself has no padding */
@@ -139,6 +139,13 @@ header{
     background-size: cover; /* This makes the image cover the entire element */
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
+}
+.header-image {
+	width: 100%;
+	height: auto;
+	padding: 0; /* Ensure the image itself has no padding */
+    margin: 0;  /* Ensure the image has no margin */
+	display: block; /* Removes any inline spacing below the image */
 }
 .h1container{
     margin: 20px auto;
