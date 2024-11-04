@@ -2,6 +2,7 @@
     --text-mult: 1.2;
 }
 
+
 /*Navigation*/
 .bigNav {
     position: -webkit-sticky; /* For Safari */
@@ -52,6 +53,7 @@ nav a:hover {
 	background-color: #F9DB57;
 }
 
+
 /*Gemini*/
 body {
     font-family: Arial, sans-serif;
@@ -101,6 +103,8 @@ section {
     max-width: 100%;
 }
 /* End Gemini*/
+
+
 .container { /*LARGER CONTAINTER*/
 	max-width: 1200px;
     margin: 20px auto;
@@ -135,7 +139,6 @@ header{
     background-size: cover; /* This makes the image cover the entire element */
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
-    
 }
 .h1container{
     margin: 20px auto;
@@ -151,9 +154,11 @@ body{
 footer{
 	clear: both;
 }
+
+
 /*About*/
 .about-container {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
 
     max-width: 1200px;
@@ -161,15 +166,15 @@ footer{
     padding: 0 20px;
     min-height: 50vh;
 }
-  
 .about-image {
+    float: left;
     width: 50%;
-    margin-right: 20px;
+    --margin-size: 20px;
+    margin-right: var(--margin-size);
+    margin-bottom: var(--margin-size);
 }
-  
-.about-text {
-    flex: 1;
-}
+
+
 /*Contact*/
 .contact-container{
     max-width: 1200px;
