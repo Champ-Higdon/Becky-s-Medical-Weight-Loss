@@ -101,6 +101,16 @@ section {
     max-width: 100%;
 }
 /* End Gemini*/
+.container { /*LARGER CONTAINTER*/
+	max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+	min-height: 50vh;
+	text-align: justify;
+}
+.h1container{
+    margin: 0 20px;
+}
 .header-image {
 	width: 50%;
 	height: auto;
@@ -137,10 +147,15 @@ footer{
 .about-container {
     display: flex;
     align-items: center;
+
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    min-height: 50vh;
 }
   
 .about-image {
-    width: 200px;
+    width: 50%;
     margin-right: 20px;
 }
   
