@@ -13,12 +13,16 @@
 }
 .infoNav{
     display: flex;
+    @media (max-width: 600px) {
+        display: block; /* Adjust info Nav for smaller screens */
+    }
     background-color: #000000;
 }
 .infoNavA{
     color:#fff;
     background-color: #000000;
     padding: 0px 60px;
+    translate: -50px 0px;
 }
 nav {
 	background-color: #444;
