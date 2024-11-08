@@ -139,7 +139,7 @@ header{
     margin:0;
     padding:0;
 
-    background-image: url("images/headerBackground.jpg");
+    /*background-image: url("images/ResilientLogo.jpeg");*/
     background-size: cover; /* This makes the image cover the entire element */
     background-position: center; /* This centers the image */
     background-repeat: no-repeat; /* This prevents the image from repeating */
