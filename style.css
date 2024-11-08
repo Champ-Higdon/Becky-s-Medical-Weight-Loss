@@ -1,5 +1,7 @@
 :root{
     --text-mult: 1.2;
+    --brand-purple: #5A20E3;
+    --brand-purple-transparent: #5a20e341;
 }
 
 
@@ -25,36 +27,39 @@
     translate: -50px 0px;
 }
 nav {
-	background-color: #444;
+	background-color: #fff;
     padding: 0px;
     text-align: center;
+
+    /*border-top: 3px solid var(--brand-purple);*/
+    border-bottom: 3px solid var(--brand-purple);
 
     top: 0;
     z-index: 1000; /* Ensures it stays on top of other content */
 	display: flex; /* Use Flexbox */
-    justify-content: center; /* Center the links horizontally */
+    justify-content: space-around; /* Center the links horizontally and space equaly*/
 }
 nav a {
-	color: #fff;
+	color: #000;
     margin: 0 0px;
     text-decoration: none;
     font-weight: bold;
 	
-    padding: 20px 35px; /* Add padding to make the link area bigger */
+    padding: 20px 10%; /* Add padding to make the link area bigger */
     /* Media query for smaller screens (below 600px) */
     @media (max-width: 600px) {
     padding: 20px 20px; /* Adjust padding for smaller screens */
     }
     
     display: inline-block; /* Make the links behave like blocks */
-    background-color: #444; /* Initial background color */
+    background-color: #ffffff; /* Initial background color */
     /*border-radius: 5px; /* Optional: round the corners */
 }
 nav a:hover {
 /*background-color: #000000;*/
-	color: #000000;
+	color: var(--brand-purple);
     text-decoration: underline;
-	background-color: #F9DB57;
+	background-color: var(--brand-purple-transparent);
 }
 
 
@@ -94,7 +99,7 @@ section {
 
 .service.right-image {
     /*flex-direction: row-reverse;*/
-    background-color: #e0f2fe; /* Light blue background */
+    background-color: var(--brand-purple-transparent); /* Light blue background */
 }
 
 .service .image-container,
