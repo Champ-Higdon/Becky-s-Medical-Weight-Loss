@@ -95,6 +95,7 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-evenly;
 }
 
 .service.right-image {
@@ -104,8 +105,12 @@ section {
 
 .service .image-container,
 .service .text-container {
-    flex: 1;
+    
     padding: 20px;
+    margin: 0 3%;
+}
+.service .text-container{
+    flex: 1;
 }
 
 .service img {
@@ -171,6 +176,34 @@ footer{
 	clear: both;
 }
 
+/* Style the tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the word */
+    left: 50%;
+    margin-left: -60px; /* Offset by half the width of the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* Show the tooltip text when hovering over the container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 
 /*About*/
 .about-container {
