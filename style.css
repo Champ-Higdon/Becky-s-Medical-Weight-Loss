@@ -2,6 +2,7 @@
     --text-mult: 1.2;
     --brand-purple: #5A20E3;
     --brand-purple-transparent: #5a20e341;
+    --brand-light-purple: #D3C7F6;
 }
 
 
@@ -194,15 +195,18 @@ footer{
     display: inline-block;
     cursor: pointer;
     z-index: 1;
+
+    color:rgb(0, 100, 255);
 }
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #6c757d;
-    color: #fff;
+    background-color: var(--brand-light-purple);
+    color: #000;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 3px solid var(--brand-purple);
     padding: 5px;
     position: absolute;
     z-index: 1;
