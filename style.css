@@ -12,6 +12,7 @@
     top: 0px;
     margin: 0 0 0 0;
     padding: 0px 0px 0px 0px;
+    z-index: 500;
 }
 .infoNav{
     display: flex;
@@ -92,15 +93,24 @@ section {
 }
 
 .service {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-evenly;
+    min-height: 50vh;
 }
 
 .service.right-image {
-    /*flex-direction: row-reverse;*/
-    background-color: var(--brand-purple-transparent); /* Light blue background */
+    flex-direction: row-reverse;
+}
+.service.right-image .image-container{
+    float: right;
+}
+.service.left-image{
+    background-color: var(--brand-purple-transparent); /* Light purple background */
+}
+.service.left-image .image-container{
+    float: left;
 }
 
 .service .image-container,
@@ -111,10 +121,12 @@ section {
 }
 .service .text-container{
     flex: 1;
+    text-align: justify;
 }
 
 .service img {
     max-width: 100%;
+    max-height: 45vh;
 }
 /* End Gemini*/
 
@@ -181,6 +193,7 @@ footer{
     position: relative;
     display: inline-block;
     cursor: pointer;
+    z-index: 1;
 }
 /* Tooltip text */
 .tooltip .tooltiptext {
