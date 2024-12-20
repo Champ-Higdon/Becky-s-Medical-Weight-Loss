@@ -98,6 +98,8 @@ section {
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-evenly;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .service.right-image {
@@ -108,6 +110,7 @@ section {
 }
 .service.left-image{
     background-color: var(--brand-purple-transparent); /* Light purple background */
+    flex-direction: row;
 }
 .service.left-image .image-container{
     float: left;
@@ -118,16 +121,21 @@ section {
     
     padding: 20px;
     margin: 10px 2rem;
+    self-align: center;
 }
 .service .image-container{
-    
+    flex: 1 1 auto;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .service .text-container{
     text-align: justify;
 }
 
 .service img {
-
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: block;
 }
 /* Clearfix Hack */
 .service::after {
