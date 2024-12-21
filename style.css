@@ -216,7 +216,7 @@ footer{
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 420px;
     background-color: var(--brand-light-purple);
     color: #000;
     text-align: center;
@@ -226,7 +226,7 @@ footer{
     position: absolute;
     z-index: 1;
     bottom: 125%; /* Position the tooltip above the word */
-    left: 50%;
+    left: 0%;
     margin-left: -60px; /* Offset by half the width of the tooltip */
     opacity: 0;
     transition: opacity 0.3s;
