@@ -46,8 +46,8 @@ nav a {
     margin: 0 0px;
     text-decoration: none;
     font-weight: bold;
-	
-    padding: 20px 10%; /* Add padding to make the link area bigger */
+	width: 25%;
+    padding: 20px 7%; /* Add padding to make the link area bigger */
     /* Media query for smaller screens (below 600px) */
     @media (max-width: 600px) {
     padding: 20px 20px; /* Adjust padding for smaller screens */
