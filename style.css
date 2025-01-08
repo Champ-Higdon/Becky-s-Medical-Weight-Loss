@@ -47,10 +47,12 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 	width: 25%;
-    padding: 20px 7%; /* Add padding to make the link area bigger */
+    overflow: visible;
+    padding: 20px 5%; /* Add padding to make the link area bigger */
     /* Media query for smaller screens (below 600px) */
     @media (max-width: 600px) {
-    padding: 20px 20px; /* Adjust padding for smaller screens */
+    padding: 20px 0px; /* Adjust padding for smaller screens */
+    font-size: 16px;
     }
     
     display: inline-block; /* Make the links behave like blocks */
