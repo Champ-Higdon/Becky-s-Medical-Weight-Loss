@@ -297,9 +297,10 @@ footer{
 }
 .slider div img{
     @media (min-width: 600px){
-        display: flex;
+        display: block;
         float: left;
-        height: 100%;
+        //height: 100%;
+        max-width: min(100%, 600px);
     }
     @media (max-width: 600px){
         display: block; /* Block element for easier centering */
@@ -313,6 +314,7 @@ footer{
         display: flex;
     }
     padding: 20px;
+    min-width: 6rem;
 }
 
 @media (min-width: 600px){
