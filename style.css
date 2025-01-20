@@ -109,6 +109,7 @@ section {
 }
 .service.right-image .image-container{
     float: right;
+    max-width: 500px;
 }
 .service.left-image{
     background-color: var(--brand-purple-transparent); /* Light purple background */
@@ -116,14 +117,18 @@ section {
 }
 .service.left-image .image-container{
     float: left;
+    max-width: 500px;
 }
 
 .service .image-container,
 .service .text-container {
     
     padding: 20px;
-    margin: 10px 2rem;
+    margin: 10px 8rem;
     self-align: center;
+    @media (max-width: 600px){
+        margin: 10px 2rem;
+    }
 }
 .service .image-container{
     flex: 1 1 auto;
@@ -198,7 +203,19 @@ header{
 }
 h1{
     font-size: calc(32px * var(--text-mult));
+    margin: auto 8rem;
+    @media (max-width: 600px){
+        margin: auto 2rem;
+    }
 }
+h1.about{
+    font-size: calc(32px * var(--text-mult));
+    margin: auto 2rem;
+    @media (min-width: 720px){
+        margin: auto 8rem;
+    }
+}
+
 body{
     font-size: calc(16px * var(--text-mult));
 }
@@ -243,19 +260,34 @@ footer{
 .about-container {
     /*display: flex;*/
     align-items: center;
+    justify-content: space-evenly;
+    @media (min-width: 720px){
+        justify-content: flex-start;
+    }
 
-    max-width: 1200px;
-    margin: 20px auto;
+    /* max-width: 1200px; */
+    margin: 20px 0;
     padding: 0 20px;
     min-height: 50vh;
 }
 .about-image {
     float: left;
-    width: 50%;
+    width: 25%;
     --margin-size: 20px;
     margin-right: var(--margin-size);
     margin-bottom: var(--margin-size);
 }
+.about-container p{
+    line-height: 1.5; /* 1.5 times the font size */
+}
+.about-image,
+.about-container p{
+    margin: auto 2rem;
+    @media (min-width: 720px){
+        margin: auto 8rem;
+    }
+}
+
 
 
 /*Contact*/
@@ -300,7 +332,7 @@ footer{
         display: block;
         float: left;
         //height: 100%;
-        max-width: min(100%, 600px);
+        max-width: min(60%, 600px);
     }
     @media (max-width: 600px){
         display: block; /* Block element for easier centering */
